@@ -1,0 +1,22 @@
+{ "unknown":
+   { "type": "IncomeRecord",
+     "earned": 10,
+     "unearned": 15
+   },
+   "known":
+   { "type": "IncomeRecord",
+     "total": 20
+   },
+   "single":
+   { "type": "PersonRecord",
+     "filing_status": "Single",
+     "income": "unknown"
+   },
+   "unknowable":
+   { "type": "IncomeRecord",
+     "earned": 10
+   },
+   "blank":
+   { "type": "IncomeRecord"
+   }
+}

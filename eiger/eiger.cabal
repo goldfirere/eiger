@@ -1,0 +1,54 @@
+cabal-version:      2.4
+name:               eiger
+version:            0.1
+synopsis:
+
+-- description:
+homepage:
+
+-- bug-reports:
+license:            MIT
+license-file:       LICENSE
+author:             Richard Eisenberg, Alex Bernauer
+maintainer:         rae@richarde.dev
+
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+library
+    exposed-modules: Eiger.Record
+                     Eiger.DSL
+                     Eiger.Key
+                     Eiger.DSL.Number
+                     Eiger.DSL.Equality
+                     Eiger.Record.Operation
+                     Eiger.Monad
+                     Eiger.Record.Class
+                     Eiger.Record.TH
+                     Eiger.Database
+
+    other-modules:   Eiger.Util
+                     Eiger.Generic
+                     Eiger.Record.Type
+                     Eiger.Record.Core
+                     Eiger.DSL.Instances
+
+    -- other-extensions:
+    build-depends:    base >= 4.16 && < 5,
+                      dependent-map >= 0.4,
+                      containers >= 0.6,
+                      generic-lens >= 2.2,
+                      generic-lens-core >= 2.2,
+                      text >= 1.2,
+                      dependent-sum >= 0.7,
+                      deepseq >= 1.4,
+                      some >= 1.0,
+                      template-haskell >= 2.18,
+                      runtime-instances >= 1.0,
+                      type-reflection >= 1.0,
+
+    hs-source-dirs:   src
+    default-language: GHC2021
+
+    default-extensions: ExtendedDefaultRules

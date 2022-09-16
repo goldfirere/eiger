@@ -1,0 +1,32 @@
+{
+    "blank": {
+        "earned": null,
+        "total": null,
+        "type": "IncomeRecord",
+        "unearned": null
+    },
+    "known": {
+        "earned": null,
+        "total": 20.0,
+        "type": "IncomeRecord",
+        "unearned": null
+    },
+    "single": {
+        "filed_income": 25.0,
+        "filing_status": "Single",
+        "income": "unknown",
+        "type": "PersonRecord"
+    },
+    "unknowable": {
+        "earned": 10.0,
+        "total": null,
+        "type": "IncomeRecord",
+        "unearned": null
+    },
+    "unknown": {
+        "earned": 10.0,
+        "total": 25.0,
+        "type": "IncomeRecord",
+        "unearned": 15.0
+    }
+}

@@ -1,0 +1,9 @@
+{ "switzerland": { "type" : "Jurisdiction"
+                 , "year" : "2022"
+}
+, "2022": { "type": "FiscalYear" }
+, "Pizza Hut": { "type": "Entity"
+               , "jurisdiction": "switzerland"
+               , "year": "2022"
+               , "klass": "InvestmentEntity" }
+}

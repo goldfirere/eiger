@@ -1,0 +1,44 @@
+cabal-version:      2.4
+name:               eiger-json
+version:            0.1
+synopsis:
+
+-- description:
+homepage:
+
+-- bug-reports:
+license:            MIT
+license-file:       LICENSE
+author:             Richard Eisenberg, Alex Bernauer
+maintainer:         rae@richarde.dev
+
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+library
+    exposed-modules: Eiger.JSON.Read
+                     Eiger.JSON.Write
+                     Eiger.JSON.Class
+                     Eiger.JSON
+
+    other-modules:   Eiger.JSON.Util
+                     Eiger.JSON.Instance
+
+    -- other-extensions:
+    build-depends:    base >= 4.16 && < 5,
+                      eiger >= 0.1,
+                      generics-sop >= 0.5,
+                      sop-core >= 0.5,
+                      aeson >= 2.0.3,
+                      runtime-instances >= 0.1,
+                      type-reflection >= 0.1,
+                      containers >= 0.6,
+                      vector >= 0.12,
+                      scientific >= 0.3,
+                      template-haskell >= 2.18,
+                      text >= 1.2,
+                      dependent-sum >= 0.7,
+
+    hs-source-dirs:   src
+    default-language: GHC2021

@@ -1,0 +1,10 @@
+packages: */*.cabal
+
+package eiger-json
+  ghc-options: -Wall -Wno-unticked-promoted-constructors
+
+package eiger-test
+  ghc-options: -Wall -Wno-unticked-promoted-constructors
+
+package eiger
+  ghc-options: -Wall -Wno-unticked-promoted-constructors -Wno-type-defaults

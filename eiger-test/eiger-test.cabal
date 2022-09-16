@@ -1,0 +1,51 @@
+cabal-version:      2.4
+name:               eiger-test
+version:            0.1
+synopsis:
+
+-- description:
+homepage:
+
+-- bug-reports:
+license:            MIT
+license-file:       LICENSE
+author:             Richard Eisenberg, Alex Bernauer
+maintainer:         rae@richarde.dev
+
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+test-suite test
+    default-language: GHC2021
+    ghc-options: -Wno-missing-home-modules
+
+    type:             exitcode-stdio-1.0
+    hs-source-dirs:   test
+
+    main-is:          Test.hs
+    other-modules:    USIncomeTax.Defs
+                      USIncomeTax.Test.HardCoded
+                      USIncomeTax.Test.Loaded
+                      USIncomeTax.Rules
+                      BEPS.Rules
+                      BEPS.Rules2
+                      BEPS.Loaded
+                      Paths
+
+    build-depends:    base >= 4.16 && < 5,
+                      tasty >= 1.4.2,
+                      tasty-hunit >= 0.10,
+                      tasty-golden >= 2.3,
+                      eiger >= 0.1,
+                      eiger-json >= 0.1,
+                      generics-sop >= 0.5,
+                      aeson >= 2.0.3,
+                      text >= 1.2,
+                      deepseq >= 1.4,
+                      filepath >= 1.4,
+                      aeson-pretty >= 0.8,
+                      bytestring >= 0.11,
+                      scientific >= 0.3,
+
+    default-extensions: ExtendedDefaultRules
