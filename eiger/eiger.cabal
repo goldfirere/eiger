@@ -1,18 +1,20 @@
 cabal-version:      2.4
 name:               eiger
 version:            0.1
-synopsis:
+synopsis: A framework for encoding legal regulations in Haskell
 
--- description:
-homepage:
+description:
+    See https://arxiv.org/abs/2209.04939 for a description of this project.
 
--- bug-reports:
+homepage: https://github.com/goldfirere/eiger
+
+bug-reports: https://github.com/goldfirere/eiger/issues
 license:            MIT
 license-file:       LICENSE
 author:             Richard Eisenberg, Alex Bernauer
 maintainer:         rae@richarde.dev
 
--- copyright:
+copyright: Richard Eisenberg, Alex Bernauer
 -- category:
 extra-source-files: CHANGELOG.md
 

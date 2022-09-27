@@ -2,17 +2,17 @@ cabal-version:      2.4
 name:               eiger-json
 version:            0.1
 synopsis:
-
 -- description:
-homepage:
 
--- bug-reports:
+homepage: https://github.com/goldfirere/eiger
+
+bug-reports: https://github.com/goldfirere/eiger/issues
 license:            MIT
 license-file:       LICENSE
 author:             Richard Eisenberg, Alex Bernauer
 maintainer:         rae@richarde.dev
 
--- copyright:
+copyright: Richard Eisenberg, Alex Bernauer
 -- category:
 extra-source-files: CHANGELOG.md
 
@@ -31,8 +31,8 @@ library
                       generics-sop >= 0.5,
                       sop-core >= 0.5,
                       aeson >= 2.0.3,
-                      runtime-instances >= 0.1,
-                      type-reflection >= 0.1,
+                      runtime-instances >= 1.0,
+                      type-reflection >= 1.0,
                       containers >= 0.6,
                       vector >= 0.12,
                       scientific >= 0.3,
